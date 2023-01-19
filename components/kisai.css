@@ -1,0 +1,43 @@
+#kisai{
+	box-sizing: border-box;
+	aspect-ratio: 1;
+	border: 1px solid #323236;
+	border-radius: 100%;
+}
+
+#strip{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	width: 99%;
+	position: relative;
+	transform: center center;
+	transition: transform 0.4s ease-in-out;
+}
+
+#leftHand{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px 70px 0px 0px;
+	gap: 20px;
+	width: 100%;
+}
+
+#rightHand{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px 0px 0px 70px;
+	gap: 20px;
+	width: 100%;
+}
+
+svg{
+	width: 100%;
+	height: auto;
+}
+
+.number{
+	width: 100%;
+}
