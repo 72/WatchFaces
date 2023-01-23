@@ -32,7 +32,7 @@ function setTime(time){
 	if(currentTime[3] == "PM"){
 		// Do something when PM
 	}
-	
+
 }
 
 function setDigit(ring, number){
@@ -127,6 +127,7 @@ setTime(getTime());
 setAspectRatio();
 updateTime();
 
-// setTimeout(()=>{
-// 	clearTimeout(ticker);
-// }, 5000);
+container.style.display = 'block';
+setTimeout( ()=>{
+	container.style.opacity = 1;
+}, 1000);

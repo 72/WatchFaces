@@ -1,3 +1,9 @@
+#watchFaceContainer{
+	transition: opacity 1s linear;
+	opacity: 0;
+	display: none;
+}
+
 #spider{
 	position: relative;
 	top: -37%;
