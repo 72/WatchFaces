@@ -1,0 +1,25 @@
+#spider{
+	position: relative;
+	top: -37%;
+	transform: translateY(50%);
+}
+
+#Ring2 {
+	transform: translateX(75px) translateY(65px);
+}
+
+#Ring3 {
+	transform: translateX(150px) translateY(130px);
+}
+
+#Ring4 {
+	transform: translateX(225px) translateY(195px);
+}
+
+#Mask g{
+	transform: translateX(66px) translateY(338.5px);
+}
+
+#Mask path{
+	fill: #000;
+}
