@@ -17,7 +17,8 @@ let windowHeight;
 let baseValue;
 
 // Define time
-let collection = [digit.num0, digit.num1, digit.num2, digit.num3, digit.num4, digit.num5, digit.num6, digit.num7, digit.num8, digit.num9];
+let collectionTens = [digit.num0, digit.num1Tens, digit.num2, digit.num3, digit.num4, digit.num5, digit.num6, digit.num7, digit.num8, digit.num9];
+let collectionOnes = [digit.num0, digit.num1Ones, digit.num2, digit.num3, digit.num4, digit.num5, digit.num6, digit.num7, digit.num8, digit.num9];
 let currentTime;
 let firstDigit;
 let secondDigit;
@@ -27,10 +28,10 @@ function setTime(time){
 	currentTime = time; // ie. ['06', 53, '02', 'PM']
 	
 	// Set Minutes
-	leftDigit1.innerHTML 	= collection[currentTime[1][0]];
-	leftDigit2.innerHTML 	= collection[currentTime[1][1]];
-	rightDigit1.innerHTML 	= collection[currentTime[1][0]];
-	rightDigit2.innerHTML 	= collection[currentTime[1][1]];
+	leftDigit1.innerHTML 	= collectionTens[currentTime[1][0]];
+	leftDigit2.innerHTML 	= collectionOnes[currentTime[1][1]];
+	rightDigit1.innerHTML 	= collectionTens[currentTime[1][0]];
+	rightDigit2.innerHTML 	= collectionOnes[currentTime[1][1]];
 
 	// Set Hour
 	switch(currentTime[0]){
