@@ -23,10 +23,10 @@ let ticker;
 function setTime(time){
 	currentTime = time; // ie. ['06', 53, '02', 'PM']
 	
-	setDigit(ring1Lines, Number(currentTime[0].toString()[0]));
-	setDigit(ring2Lines, Number(currentTime[0].toString()[1]));
-	setDigit(ring3Lines, Number(currentTime[1].toString()[0]));
-	setDigit(ring4Lines, Number(currentTime[1].toString()[1]));
+	setDigit(ring1Lines, Number(currentTime[0][0]));
+	setDigit(ring2Lines, Number(currentTime[0][1]));
+	setDigit(ring3Lines, Number(currentTime[1][0]));
+	setDigit(ring4Lines, Number(currentTime[1][1]));
 
 	// Detect period
 	if(currentTime[3] == "PM"){

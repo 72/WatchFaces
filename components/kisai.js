@@ -17,6 +17,7 @@ let windowHeight;
 let baseValue;
 
 // Define time
+let collection = [digit.num0, digit.num1, digit.num2, digit.num3, digit.num4, digit.num5, digit.num6, digit.num7, digit.num8, digit.num9];
 let currentTime;
 let firstDigit;
 let secondDigit;
@@ -24,81 +25,15 @@ let ticker;
 
 function setTime(time){
 	currentTime = time; // ie. ['06', 53, '02', 'PM']
-	// Set Minutes. Set First Digit.
-	switch(currentTime[1].toString()[0]){
-		case '0':
-			firstDigit = digit.num0;
-			break;
-		case '1':
-			firstDigit = digit.num1Tens;
-			break;
-		case '2':
-			firstDigit = digit.num2;
-			break;
-		case '3':
-			firstDigit = digit.num3;
-			break;
-		case '4':
-			firstDigit = digit.num4;
-			break;
-		case '5':
-			firstDigit = digit.num5;
-			break;
-		case '6':
-			firstDigit = digit.num6;
-			break;
-		case '7':
-			firstDigit = digit.num7;
-			break;
-		case '8':
-			firstDigit = digit.num8;
-			break;
-		case '9':
-			firstDigit = digit.num9;
-			break;
-	}
-
-	// Set Minutes. Set Second Digit. 
-	switch(currentTime[1].toString()[1]){
-		case '0':
-			secondDigit = digit.num0;
-			break;
-		case '1':
-			secondDigit = digit.num1Ones;
-			break;
-		case '2':
-			secondDigit = digit.num2;
-			break;
-		case '3':
-			secondDigit = digit.num3;
-			break;
-		case '4':
-			secondDigit = digit.num4;
-			break;
-		case '5':
-			secondDigit = digit.num5;
-			break;
-		case '6':
-			secondDigit = digit.num6;
-			break;
-		case '7':
-			secondDigit = digit.num7;
-			break;
-		case '8':
-			secondDigit = digit.num8;
-			break;
-		case '9':
-			secondDigit = digit.num9;
-			break;
-	}
-
-	leftDigit1.innerHTML = firstDigit;
-	leftDigit2.innerHTML = secondDigit;
-	rightDigit1.innerHTML = firstDigit;
-	rightDigit2.innerHTML = secondDigit;
+	
+	// Set Minutes
+	leftDigit1.innerHTML 	= collection[currentTime[1][0]];
+	leftDigit2.innerHTML 	= collection[currentTime[1][1]];
+	rightDigit1.innerHTML 	= collection[currentTime[1][0]];
+	rightDigit2.innerHTML 	= collection[currentTime[1][1]];
 
 	// Set Hour
-	switch(currentTime[0].toString()){
+	switch(currentTime[0]){
 		case '01':
 			strip.style.transform = 'rotate(-60deg)';
 			hideLeftHand();
@@ -205,7 +140,3 @@ setTime(getTime());
 setAspectRatio();
 positionStrip();
 updateTime();
-
-// setTimeout(()=>{
-// 	clearTimeout(ticker);
-// }, 5000);

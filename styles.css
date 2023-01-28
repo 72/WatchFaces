@@ -30,7 +30,13 @@ body{
 	margin: 0 auto;
 }
 
+.description div{
+	margin: 16px 8px;
+	color: #606068;
+}
+
 .mastolink{
+	padding: 8px;
 	text-decoration: none;
 }
 
@@ -43,7 +49,7 @@ body{
 }
 
 #list{
-	margin: 80px 0;
+	margin: 64px 0;
 	text-align: center;
 	font-size: 1.2em;
 }

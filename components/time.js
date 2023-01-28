@@ -11,11 +11,12 @@ export default function getTime(){
 		h = h - 12;
 		period = "PM"; 
 	}
-	// account for 0 in tens position
+	// Account for 0 in tens position.
+	// Note that this approach makes the type sometimes be a Number, and sometimes a String. We will default it to String for our purposes. (ie. '02' becomes '2' as a Number, and we don't want that.) 
 	h = (h < 10) ? ("0" + h) : h;
 	m = (m < 10) ? ("0" + m) : m;
 	s = (s < 10) ? ("0" + s) : s;
 	// define time
-	let time = [h, m, s, period];
+	let time = [h.toString(), m.toString(), s.toString(), period];
 	return time;
 }

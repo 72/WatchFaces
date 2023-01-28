@@ -1,0 +1,30 @@
+#leftHand, #rightHand {
+	/* display: flex;
+    gap: 2%; */
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 8px;
+}
+
+#watchFaceContainer {
+	position: relative;
+	max-width: 430px !important;
+}
+
+#adjust {
+	background-color: #060612;
+	padding: 40px;
+	border-radius: 36px;
+	/* height: 100%; */
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+
+svg{
+	width: 100%;
+	height: auto;
+}
+
+.number{
+	width: 100%;
+}

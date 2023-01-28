@@ -1,7 +1,14 @@
 import getTime from './time.js';
+import * as digit from './adjustNumbers.js';
 
 // Setup UI elements
 let container = document.querySelector('#watchFaceContainer');
+let leftHand = document.querySelector("#leftHand");
+let rightHand = document.querySelector("#rightHand");
+let leftDigit1 = document.querySelectorAll(".number")[0];
+let leftDigit2 = document.querySelectorAll(".number")[1];
+let rightDigit1 = document.querySelectorAll(".number")[2];
+let rightDigit2 = document.querySelectorAll(".number")[3];
 
 // DOM frame mgmt
 let windowWidth;
@@ -9,15 +16,18 @@ let windowHeight;
 let baseValue;
 
 // Define time
+let collection = [digit.num0, digit.num1, digit.num2, digit.num3, digit.num4, digit.num5, digit.num6, digit.num7, digit.num8, digit.num9];
 let currentTime;
-let firstDigit;
-let secondDigit;
 let ticker;
+
 
 function setTime(time){
 	currentTime = time; // ie. ['06', 53, '02', 'PM']
 	
-	// ToDo
+	leftDigit1.innerHTML	= collection[currentTime[0][0]];
+	leftDigit2.innerHTML	= collection[currentTime[0][1]];
+	rightDigit1.innerHTML	= collection[currentTime[1][0]];
+	rightDigit2.innerHTML	= collection[currentTime[1][1]];
 
 	// Detect period
 	if(currentTime[3] == "PM"){
@@ -36,6 +46,7 @@ function setAspectRatio() {
 		baseValue = windowWidth;
 	}
 	container.style.width = (baseValue * 0.98) + 'px';
+
 }
 
 function adjustMain() {
@@ -54,7 +65,3 @@ function updateTime(){
 setTime(getTime());
 setAspectRatio();
 updateTime();
-
-// setTimeout(()=>{
-// 	clearTimeout(ticker);
-// }, 5000);
