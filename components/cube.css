@@ -1,0 +1,17 @@
+#watchFaceContainer{
+	transition: opacity 1s linear;
+	opacity: 0;
+	display: none;
+	position: relative;
+}
+
+#cube{
+	position: relative;
+	width: 90%;
+	top: -40px;
+	height: auto;
+}
+
+svg path{
+	fill: #202026;
+}
