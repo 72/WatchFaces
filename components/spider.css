@@ -2,12 +2,16 @@
 	transition: opacity 1s linear;
 	opacity: 0;
 	display: none;
+	position: relative;
 }
 
 #spider{
-	position: relative;
-	top: -37%;
-	transform: translateY(50%);
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 #Ring2 {

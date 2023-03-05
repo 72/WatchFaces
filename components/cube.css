@@ -8,10 +8,11 @@
 #cube{
 	position: relative;
 	width: 90%;
-	top: -40px;
+	top: -10px;
 	height: auto;
 }
 
 svg path{
 	fill: #202026;
 }
+
