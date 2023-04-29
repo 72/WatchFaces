@@ -1,6 +1,7 @@
 import getTime from './time.js';
 
 // Setup UI elements
+let app = document.querySelector('#App');
 let container = document.querySelector('#watchFaceContainer');
 let ring1Lines = document.querySelectorAll("#Ring1 path");
 let ring2Lines = document.querySelectorAll("#Ring2 path");
@@ -98,6 +99,8 @@ function setDigit(ring, number){
 function setAspectRatio() {
 	windowWidth = window.innerWidth;
 	windowHeight = window.innerHeight;
+
+	app.style.height = `${windowHeight}px`;
 
 	if(windowWidth >= windowHeight){
 		baseValue = windowHeight;

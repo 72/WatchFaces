@@ -2,6 +2,7 @@ import getTime from './time.js';
 import * as digit from './adjustNumbers.js';
 
 // Setup UI elements
+let app = document.querySelector('#App');
 let container = document.querySelector('#watchFaceContainer');
 let leftHand = document.querySelector("#leftHand");
 let rightHand = document.querySelector("#rightHand");
@@ -39,6 +40,8 @@ function setTime(time){
 function setAspectRatio() {
 	windowWidth = window.innerWidth;
 	windowHeight = window.innerHeight;
+
+	app.style.height = `${windowHeight}px`;
 
 	if(windowWidth >= windowHeight){
 		baseValue = windowHeight;

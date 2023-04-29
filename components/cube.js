@@ -2,6 +2,7 @@ import getTime from './time.js';
 import * as digit from './cubeNumbers.js';
 
 // Setup UI elements
+let app = document.querySelector('#App');
 let container = document.querySelector('#watchFaceContainer');
 
 // DOM frame mgmt
@@ -49,6 +50,8 @@ function setTime(time){
 function setAspectRatio() {
 	windowWidth = window.innerWidth;
 	windowHeight = window.innerHeight;
+
+	app.style.height = `${windowHeight}px`;
 
 	if(windowWidth >= windowHeight){
 		baseValue = windowHeight;
