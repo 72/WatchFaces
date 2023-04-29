@@ -2,6 +2,7 @@ import getTime from './time.js';
 import * as digit from './kisaiNumbers.js';
 
 // Setup UI elements
+let app = document.querySelector('#App');
 let container = document.querySelector('#watchFaceContainer');
 let strip = document.querySelector("#strip");
 let leftHand = document.querySelector("#leftHand");
@@ -105,6 +106,8 @@ function setAspectRatio() {
 	windowWidth = window.innerWidth;
 	windowHeight = window.innerHeight;
 
+	app.style.height = `${windowHeight}px`;
+
 	if(windowWidth >= windowHeight){
 		baseValue = windowHeight;
 	} else {
@@ -141,3 +144,4 @@ setTime(getTime());
 setAspectRatio();
 positionStrip();
 updateTime();
+
