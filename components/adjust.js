@@ -49,8 +49,8 @@ function setAspectRatio() {
 		baseValue = windowWidth;
 	}
 
-	container.style.width = (baseValue * 0.98) + 'px';
-	container.style.bottom = ((windowHeight - container.clientHeight) / 2 ) + 'px';
+	container.style.width = (baseValue * 0.92) + 'px';
+	container.style.top = ((windowHeight - container.clientHeight) / 2 ) + 'px';
 
 }
 

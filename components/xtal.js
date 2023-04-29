@@ -5,6 +5,12 @@ import * as digit from './xtalNumbers.js';
 let app = document.querySelector('#App');
 let container = document.querySelector('#watchFaceContainer');
 
+// Handle Info Modal
+let infoButton = document.querySelector('#infoButton');
+let modal = document.querySelector('#modal-xtal');
+let exits = document.querySelectorAll('.modal-exit');
+
+
 // DOM frame mgmt
 let windowWidth;
 let windowHeight;
@@ -59,6 +65,7 @@ function setAspectRatio() {
 	windowHeight = window.innerHeight;
 
 	app.style.height = `${windowHeight}px`;
+	modal.style.height = `${windowHeight}px`;
 
 	if(windowWidth >= windowHeight){
 		baseValue = windowHeight;
@@ -91,10 +98,7 @@ setTimeout( ()=>{
 }, 1000);
 
 
-// Handle Info Modal
-let infoButton = document.querySelector('#infoButton');
-let modal = document.querySelector('#modal-xtal');
-let exits = document.querySelectorAll('.modal-exit');
+
 
 infoButton.addEventListener('click', (event)=>{
 	event.preventDefault();

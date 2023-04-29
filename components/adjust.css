@@ -6,9 +6,13 @@
 	gap: 8px;
 }
 
-#watchFaceContainer {
+#watchFaceContainer{
+	box-sizing: border-box;
+	aspect-ratio: 1;
 	position: relative;
 	max-width: 430px !important;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 #adjust {
