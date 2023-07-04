@@ -17,12 +17,10 @@ let baseValue;
 
 // Define time
 let currentTime;
-let firstDigit;
-let secondDigit;
 let ticker;
 
 function setTime(time){
-	currentTime = time; // ie. ['06', 53, '02', 'PM']
+	currentTime = time; // ie. ['06', '53', '02', 'PM']
 	
 	setDigit(ring1Lines, Number(currentTime[0][0]));
 	setDigit(ring2Lines, Number(currentTime[0][1]));
@@ -115,8 +113,6 @@ function adjustMain() {
 }
 
 window.addEventListener("resize", adjustMain);
-
-
 
 
 // Set and Update Time 

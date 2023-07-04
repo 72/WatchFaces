@@ -1,0 +1,32 @@
+<svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="29" width="2.8" height="92.68" fill="#8A8C8E"/>
+<rect x="29.0001" y="118.72" width="2.8" height="21.28" fill="#8A8C8E"/>
+<path d="M29.0001 119H31.8001V117.6L37.4001 111.16V100.24L31.8001 92.4H29.0001V92.96L34.6001 100.8V110.6L29.0001 117.04V119Z" fill="#8A8C8E"/>
+<rect x="40.2002" width="2.8" height="22.4" fill="#8A8C8E"/>
+<rect x="45.8002" width="2.8" height="22.4" fill="#8A8C8E"/>
+<rect x="40.2002" y="73.64" width="2.8" height="66.36" fill="#8A8C8E"/>
+<rect x="45.8002" y="73.64" width="2.8" height="66.36" fill="#8A8C8E"/>
+<rect width="2.8" height="22.4" transform="matrix(1 0 0 -1 57.0001 140)" fill="#8A8C8E"/>
+<rect width="2.8" height="22.4" transform="matrix(1 0 0 -1 62.6001 140)" fill="#8A8C8E"/>
+<rect width="2.8" height="66.36" transform="matrix(1 0 0 -1 57.0001 66.36)" fill="#8A8C8E"/>
+<rect width="2.8" height="66.36" transform="matrix(1 0 0 -1 62.6001 66.36)" fill="#8A8C8E"/>
+<rect x="73.8" width="2.8" height="22.4" fill="#8A8C8E"/>
+<rect x="79.4001" width="2.8" height="22.4" fill="#8A8C8E"/>
+<rect x="73.8" y="73.64" width="2.8" height="66.36" fill="#8A8C8E"/>
+<rect x="79.4001" y="73.64" width="2.8" height="66.36" fill="#8A8C8E"/>
+<rect width="2.8" height="22.4" transform="matrix(1 0 0 -1 90.6001 140)" fill="#8A8C8E"/>
+<rect width="2.8" height="22.4" transform="matrix(1 0 0 -1 96.2002 140)" fill="#8A8C8E"/>
+<rect width="2.8" height="66.36" transform="matrix(1 0 0 -1 90.6002 66.36)" fill="#8A8C8E"/>
+<rect width="2.8" height="66.36" transform="matrix(1 0 0 -1 96.2002 66.36)" fill="#8A8C8E"/>
+<rect x="110.2" y="140" width="2.8" height="92.68" transform="rotate(180 110.2 140)" fill="#8A8C8E"/>
+<rect x="110.2" y="21.28" width="2.8" height="21.28" transform="rotate(180 110.2 21.28)" fill="#8A8C8E"/>
+<path d="M110.2 21H107.4V22.4L101.8 28.84V39.76L107.4 47.6H110.2V47.04L104.6 39.2V29.4L110.2 22.96V21Z" fill="#8A8C8E"/>
+<path d="M45.8 21H48.6V22.4L54.2 28.84V66.36L48.6 72.8V74.2H45.8V72.24L51.4 65.8V29.4L45.8 22.96V21Z" fill="#8A8C8E"/>
+<path d="M43.0001 21H40.2001V22.4L34.6001 28.84V66.36L40.2001 72.8V74.2H43.0001V72.24L37.4001 65.8V29.4L43.0001 22.96V21Z" fill="#8A8C8E"/>
+<path d="M79.4 21H82.2V22.4L87.8 28.84V66.36L82.2 72.8V74.2H79.4V72.24L85 65.8V29.4L79.4 22.96V21Z" fill="#8A8C8E"/>
+<path d="M76.6001 21H73.8001V22.4L68.2001 28.84V66.36L73.8001 72.8V74.2H76.6001V72.24L71.0001 65.8V29.4L76.6001 22.96V21Z" fill="#8A8C8E"/>
+<path d="M62.6 65.8H65.4V67.2L71 73.64V111.16L65.4 117.6V119H62.6V117.04L68.2 110.6V74.2L62.6 67.76V65.8Z" fill="#8A8C8E"/>
+<path d="M59.8 65.8H57V67.2L51.4 73.64V111.16L57 117.6V119H59.8V117.04L54.2 110.6V74.2L59.8 67.76V65.8Z" fill="#8A8C8E"/>
+<path d="M96.2001 65.8H99.0001V67.2L104.6 73.64V111.16L99.0001 117.6V119H96.2001V117.04L101.8 110.6V74.2L96.2001 67.76V65.8Z" fill="#8A8C8E"/>
+<path d="M93.4001 65.8H90.6001V67.2L85.0001 73.64V111.16L90.6001 117.6V119H93.4001V117.04L87.8001 110.6V74.2L93.4001 67.76V65.8Z" fill="#8A8C8E"/>
+</svg>
