@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Watchface - Maru</title>
+	<link href="/styles.css" rel="stylesheet">
+	<link href="/components/maru.css" rel="stylesheet">
+</head>
+<body>
+	<div id="App">
+		<div id="watchFaceContainer">
+			<svg id="maru" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M160 320C248.366 320 320 248.366 320 160C320 71.6344 248.366 0 160 0C71.6344 0 0 71.6344 0 160C0 248.366 71.6344 320 160 320ZM160 200C182.091 200 200 182.091 200 160C200 137.909 182.091 120 160 120C137.909 120 120 137.909 120 160C120 182.091 137.909 200 160 200Z" fill="#212125"/>
+				<circle cx="160" cy="160" r="68" stroke="white" stroke-width="4"/>
+				<circle cx="160" cy="160" r="123" stroke="white" stroke-width="4"/>
+
+				<svg id="hours" viewBox="0 0 320 320" fill="none">
+					<path d="M160 62V93" stroke="white" stroke-width="4" transform="rotate(0 160 160)"/>
+				</svg>
+				
+				<svg id="minutes" viewBox="0 0 320 320" fill="none">
+					<path d="M160 35V66" stroke="white" stroke-width="4" transform="rotate(0 160 160)"/>
+				</svg>
+
+				<svg viewBox="0 0 320 320" fill="none">
+					<circle id="connector" r="96" cx="160" cy="160" fill="transparent" stroke="#FFF" stroke-width="4" stroke-dasharray="603.19" stroke-dashoffset="0" transform ="rotate(0 160 160)"></circle>
+				</svg>
+				
+			</svg>				
+		</div>
+	</div>
+	<script type="module" src="/components/maru.js"></script>
+</body>
+</html>

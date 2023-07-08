@@ -1,0 +1,15 @@
+#watchFaceContainer{
+	transition: opacity 1s linear;
+	opacity: 0;
+	display: none;
+	position: relative;
+}
+
+#maru{
+	position: relative;
+	height: auto;
+}
+
+#connector{
+	stroke-dashoffset: 0;
+} 
