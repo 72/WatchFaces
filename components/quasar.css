@@ -1,0 +1,19 @@
+#App{
+	overflow: hidden;
+}
+
+#watchFaceContainer{
+	transition: opacity 1s linear;
+	opacity: 0;
+	display: none;
+	position: relative;
+}
+
+#quasar{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
